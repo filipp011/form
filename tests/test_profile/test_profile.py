@@ -44,6 +44,18 @@ def test_success_profile():
     browser.element('.btn-primary').press_enter()
 
     #Assert
+    browser.element('.table').all('td').even.should(have.texts(
+        'Filipp Nis',
+        'fil.nis61@gmail.com',
+        'Male',
+        '7928179401',
+        '18 February,2024',
+        'English',
+        'Sports',
+        'foto.jpeg',
+        'Москва.ул М.Горького 214',
+        'NCR Delhi',
+    ))
 
 
 
